@@ -37,7 +37,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         holder.title.setText(arrayList.get(position).getTitle());
         holder.size.setText(getSize(arrayList.get(position).getSize()));
         Glide.with(context).load(arrayList.get(position).getPath()).placeholder(R.drawable.ic_baseline_broken_image_24).into(holder.imageView);
-        holder.itemView.setOnClickListener(v -> onItemClickListener.onClick(v, arrayList.get(position).getPath()));
+       // holder.itemView.setOnClickListener(v -> onItemClickListener.onClick(v, arrayList.get(position).getPath()));
     }
 
     @Override
